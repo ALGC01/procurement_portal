@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Create Procurement Request</h2>
+<form action="/submit" method="POST">
+<div class="mb-3"><label>Requesting Department</label><input class="form-control" name="department"></div>
+<div class="mb-3"><label>Requester Name</label><input class="form-control" name="requester"></div>
+<div class="mb-3"><label>Item Name</label><input class="form-control" name="item_name"></div>
+<div class="mb-3"><label>Quantity</label><input type="number" class="form-control" name="quantity"></div>
+<div class="mb-3"><label>Estimated Cost</label><input class="form-control" name="cost"></div>
+<div class="mb-3"><label>Description</label><textarea class="form-control" name="description"></textarea></div>
+<button class="btn btn-success" type="submit">Submit</button>
+</form>
+{% endblock %}
